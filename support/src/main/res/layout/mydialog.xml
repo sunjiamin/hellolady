@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="65dp"
+    android:layout_height="60dp"
+    android:background="#00ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_loading_anim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="10sp"
+        android:text="加载..." />
+    <ImageView
+        android:id="@+id/iv_loading_anim"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/fast_clean_fresh_white" />
+
+
+</FrameLayout>

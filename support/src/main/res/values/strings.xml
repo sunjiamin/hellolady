@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">XinzongSupport</string>
+    <string name="prompt">提示</string>
+    <string name="exit_app">温馨提示，你确定要退出当前账号吗？</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="dismiss">隐藏</string>
+
+    <!-- 异常页面相关文案 -->
+    <string name="hit_network_failure">加载失败,请点击屏幕重试</string>
+    <string name="hit_no_data">暂无数据</string>
+    <string name="hit_no_network">网络未连接</string>
+    <string name="hit_load_data_failure">加载失败,请点击屏幕重试</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+
+    <string name="common_loading_message">加载中...</string>
+    <string name="common_empty_msg">Oops, failed to resolve data\nPlease hit the screen and try again~</string>
+    <string name="common_error_msg">Oops, something wrong!\nPlease hit the screen and try again~</string>
+    <string name="common_no_network_msg">No network connected!\nPlease hit the screen and try again after connecting~</string>
+
+
+</resources>
