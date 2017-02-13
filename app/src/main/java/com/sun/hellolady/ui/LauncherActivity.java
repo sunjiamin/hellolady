@@ -19,6 +19,7 @@ import android.widget.TextView;
 
 import com.sun.hellolady.R;
 import com.sun.hellolady.demo.APITestActivity;
+import com.sun.hellolady.demo.AidlDemo.aidl.AIDLActivity;
 import com.sun.hellolady.demo.Camera.PreCameraActivity;
 import com.sun.hellolady.demo.Charts.ChartDemoActivity;
 import com.sun.hellolady.demo.CiecleProgressBarActivity;
@@ -35,6 +36,8 @@ import com.sun.hellolady.demo.Recycler.RecyclerActivity;
 import com.sun.hellolady.demo.SlidingPanel.SlidingPanelActivity;
 import com.sun.hellolady.demo.SlidingPanel.TouchActivity;
 import com.sun.hellolady.demo.SlidingPanel.slidingdrawer;
+import com.sun.hellolady.demo.WidgetActivity.FlowLayoutActivity;
+import com.sun.hellolady.demo.WidgetActivity.FollowViewActivity;
 import com.sun.hellolady.demo.Wifi.LookWifiPasswordActivity;
 import com.sun.hellolady.demo.behavior.MyBehaviorActivity;
 import com.sun.hellolady.demo.behavior.MyBehaviorDependActivity;
@@ -66,7 +69,10 @@ public class LauncherActivity extends AppCompatActivity {
     "WatchBoardActivity",
     "LookWifiPasswordActivity",
     "MyBehaviorActivity",
-    "MyBehaviorDependActivity"};
+    "MyBehaviorDependActivity",
+    "FollowViewActivity",
+    "FlowLayoutActivity",
+    "AIDLActivity"};
 
     NetChangeObserver mNetChangeObserver;
 
@@ -207,6 +213,16 @@ public class LauncherActivity extends AppCompatActivity {
                         case 20:
                             c = MyBehaviorDependActivity.class;
                             break;
+                        case 21:
+                            c = FollowViewActivity.class;
+                            break;
+                        case 22:
+                            c = FlowLayoutActivity.class;
+                            break;
+                        case 23:
+                            c = AIDLActivity.class;
+                            break;
+
                     }
                     Context context = holder.itemView.getContext();
                     if(c!=null){

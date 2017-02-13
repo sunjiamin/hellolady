@@ -15,7 +15,7 @@
             android:layout_height="wrap_content" >
 
             <ImageView
-                android:id="@+id/id_img1"
+                android:id="@+id/id_img"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_centerVertical="true"
@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="20dp"
-                android:layout_toRightOf="@id/id_img1"
+                android:layout_toRightOf="@id/id_img"
                 android:text="第一个Item"
                 android:textColor="#ffffff"
                 android:textSize="20sp" />

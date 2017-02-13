@@ -21,7 +21,9 @@ public class SimpleImageCache {
 				.maxMemory() / 8)) {
 			@Override
 			protected int sizeOf(String key, Bitmap value) {
-				return value.getRowBytes() * value.getHeight();
+				//return value.getRowBytes() * value.getHeight();
+				// 这里返回的不是item的个数，是cache的size（单位1024个字节）
+				return value.getByteCount() / 1024;
 			}
 		};
 	}
@@ -45,8 +47,10 @@ public class SimpleImageCache {
 	 * @param value
 	 * @return the puts bitmap
 	 */
-	public Bitmap put(String key, Bitmap value) {
-		return cache.put(key, value);
+	public void put(String key, Bitmap value) {
+        if(get(key)==null){
+              cache.put(key, value);
+        }
 	}
 
 	/**

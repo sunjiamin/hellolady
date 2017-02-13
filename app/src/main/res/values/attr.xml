@@ -118,5 +118,9 @@
         <attr name="progress_num_color" format="color" />
         <attr name="max_progressbar_angle" format="integer" />//圆弧角度0~360
     </declare-styleable>
+    
+    <declare-styleable name="myView">
+        <attr name="textColor" format="color"/>
+    </declare-styleable>
 
 </resources>
